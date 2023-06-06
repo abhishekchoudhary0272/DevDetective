@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Detective</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="Wrapper">
+     
+        <header class="header">
+            <h1 class="title">DevDetective</h1>
+            <div id="btn-mode">
+                <p id="mode-text">DARK</p>
+                <div class="icon-container"><img id="mode-icon" src="assets/moon-icon.svg" alt=""></div>
+            </div>
+        </header>
+        
+        <div class="input-container">
+           
+                
+                <input type="search" name="user-input" id="input" placeholder="Enter a GitHub username..." required>
+                <div class="error">
+                    <p id="no-results" style="color: red;">no search results</p>
+                </div>
+                <button class="search-btn">Search</button>
+            
+        </div>
+
+        <div class="profile-container">
+           
+            <div class="profile-image-container">
+                <img src="" alt="" class="profile-image">
+            </div>
+
+            <div class="profile-detail">
+               <div class="username-container">
+                  
+                    <div class="date-container">
+                        <h2 class="name"></h2>
+                        <p class="joined-date"></p>
+                    </div>
+                    
+                    <a href="" class="username"></a>
+                </div>
+                <p class="user-bio"></p>
+
+                <div class="profile-stat-container">
+                 
+                    <div class="profile-stat">
+                    <p>Repos</p>
+                    <p class="repo-count state-value"></p>
+                   </div>
+                   
+                   <div class="profile-stat">
+                    <p>Followers</p>
+                    <p class="followers state-value"></p>
+                    </div>
+                   
+                    <div class="profile-stat">
+                    <p>Following</p>     
+                    <p class="following state-value"></p>
+                    </div>
+
+                </div>
+
+                <div class="profile-add-info-container">
+                    
+                    <div class="profile-info">
+                        <div class="bottom-img"><img src="assets/location-icon.svg" alt=""></div>
+                        <p class="location"></p>
+                    </div>
+                   
+                    <div class="profile-info">
+                        <div class="bottom-img"><img src="assets/website-icon.svg" alt=""></div>
+                        <a href="" class="live-link"></a>
+                    </div>
+                   
+                    <div class="profile-info">
+                        <div class="bottom-img"><img src="assets/twitter-icon.svg" alt=""></div>
+                        <a href="" class="twitter-handle"></a>
+                    </div>
+                   
+                    <div class="profile-info">
+                        <div class="bottom-img"><img src="assets/company-icon.svg" alt=""></div>
+                        <p class="company-name"></p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
